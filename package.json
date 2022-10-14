@@ -1,0 +1,18 @@
+{
+  "name": "yare-module-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node esbuild.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "esbuild": "^0.14.48"
+  },
+  "dependencies": {
+    "yare-module-lib": "^1.0.4"
+  }
+}
