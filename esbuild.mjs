@@ -1,5 +1,5 @@
-import esbuild from "esbuild";
-
+import esbuild from "esbuild"
+import inlineImages from "esbuild-plugin-inline-image"
 esbuild
   .build({
     entryPoints: ["./src/client"],
@@ -7,12 +7,13 @@ esbuild
     outfile: "./dist/client.js",
     sourcemap: "inline",
     minify: true,
+    plugins: [inlineImages()],
     loader: {
       ".html": "text",
       ".css": "text",
     },
   })
-  .catch(() => process.exit(1));
+  .catch(() => process.exit(1))
 
 esbuild
   .build({
@@ -22,4 +23,4 @@ esbuild
     sourcemap: "inline",
     minify: true,
   })
-  .catch(() => process.exit(1));
+  .catch(() => process.exit(1))

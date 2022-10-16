@@ -13,6 +13,8 @@
     "esbuild": "^0.14.48"
   },
   "dependencies": {
+    "esbuild-plugin-inline-image": "^0.0.8",
+    "three": "^0.145.0",
     "yare-module-lib": "^1.0.4"
   }
 }
